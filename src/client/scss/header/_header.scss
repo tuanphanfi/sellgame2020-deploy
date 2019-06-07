@@ -1,0 +1,254 @@
+/**************
+HEADER
+**************/
+
+
+header{
+    //NOT RECOMMEND TO USE //BEWARE OF BEFORE EDITING THESE CODE BELOW
+    position: relative;
+    //close warning ------
+
+    margin-top: 0;
+    height: 9em;
+    box-shadow: 0 5px 2px -2px gray;
+}
+
+
+.logo {
+    //NOT RECOMMEND TO USE //BEWARE OF BEFORE EDITING THESE CODE BELOW
+    position: absolute;
+
+    bottom: 10%;
+    left: 10%;
+    //close warning ------
+    width: 20%;
+    z-index: 1;
+    
+}
+
+
+
+nav {
+    //width: 100%;
+    height: 5em;
+    float: right;
+    text-align: left;
+    & .icon {
+        display: none;
+    }
+
+    & .fa-bars {
+        float: right;
+        color: $blue;
+
+    }
+
+    & ul {
+        //NOT RECOMMEND TO USE //BEWARE OF BEFORE EDITING THESE CODE BELOW
+        position: absolute;
+        bottom: 10%;
+        left: 40%;
+        //close warning ------
+    
+        display:block;
+        width: 60%;  
+        font-size: 0.9em;
+
+        
+        & .dropbtn {
+            
+            & .fa-caret-down {
+                font-size: 1em;
+                color: $blue;
+                display: inline;
+            }
+            & .drop-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                width: 15%;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                // color: $red;
+                
+
+                & .drop-links {
+                    width: 100%;
+                    height: 5%;
+                    font-size: 1em;
+                    float: none;
+                    padding: 12px 12px;
+                    text-decoration: none;
+                    display: block;
+                    font-weight: bold;
+                    color: $red;
+                    
+                    & a {
+                        color: $red;
+                    }
+
+                    &:hover {
+                        background-color: $red;
+                        color: white;
+                        font-weight: bold;
+                        transition: all .4s ease;
+                        letter-spacing: 0.01em;
+                        & a {
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                    }                           
+                }
+
+                
+            }
+
+            &:hover {
+                .drop-content {
+                    display: block;
+                }
+            }
+
+
+            // & .sub-dropbtn {
+            //     & .sub-drop-content {
+            //         display: none;
+            //     }
+
+            //     &:hover {
+            //         & .sub-drop-content {
+            //             display: block;
+            //         }
+            //     }
+            // }
+
+        }
+
+        
+    }
+
+    ul li {
+        list-style: none;   
+        display: inline-block;
+        //color: $blue;
+        font-size: 1.3vw;
+        font-style: normal;
+
+        padding: 10px 3vw;
+        
+        
+        a{
+            color: $blue;
+            font-weight: 600;
+            &:hover{
+                
+                transform: translate(0,10px);
+                transition: all .4s ease;
+                -webkit-transition: .4s; /* for Safari & Chrome */
+                text-decoration: underline;
+                color: $red;
+                opacity: 0.9;
+                letter-spacing: 0.01em;
+                
+                & .fa-caret-down {
+                    color: $red;
+                }   
+                
+            }
+    
+            &:visited{
+                text-decoration: none;
+                //color: $blue;
+            }
+    
+            &:active{
+                text-decoration: none;
+                //color: $blue;
+            }
+        }
+
+
+    
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        height: 20vw;
+    }
+
+    body {
+        clear: left;
+    }
+
+    .logo {
+        width: 50%;
+        position: absolute;
+        top: 10%;
+
+    }
+
+    nav .icon {
+        display: block;
+        position: absolute;
+        right: 10%;
+        top: 30%;
+        color: $blue;
+        cursor: pointer;
+    }
+    
+
+    nav ul {
+        width: 100vw;
+        text-align: center;
+        display: none;
+        // transform: scaleY(0);    
+        // transform-origin: top;
+        // transition: transform 1s ease;
+    }
+
+    nav ul .navitem {
+       
+        width: 100%;
+        height: 8vw;
+        display: block;
+        border-bottom: 1px solid $blue;
+
+        
+    }
+
+    nav .showNavDropdown {
+        display: block;
+        width: 100vw;
+        text-align: center;
+        border-top: 1px solid $blue;
+        top: 20vw;
+        left: 0;
+        z-index: 1;
+        // -webkit-transition: max-height 1s; 
+        // -moz-transition: max-height 1s; 
+        // -ms-transition: max-height 1s; 
+        // -o-transition: max-height 1s; 
+        // max-height: 500px;
+        // transition: max-height 1s ease-in;  
+        //overflow: hidden;
+        // transform: scaleY(1);
+        
+        
+    }
+
+    .bodyPositionChange {
+        position: relative;
+        top: 40vw;
+    }
+
+    .drop-content {
+        left: 60vw;
+    }
+}
+
+
+
+

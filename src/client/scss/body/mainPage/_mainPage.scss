@@ -1,0 +1,37 @@
+// @import '_mainNews';
+// @import '_topNews';
+@import '_MainPageCarousel';
+@import '_NewsCarousel';
+@import '_SportsCarousel';
+@import '_SeeMoreButton';
+@import '_CarouselItem';
+@import '_Title';
+@import '_Logos';
+
+.mainPage .title {
+    
+    font-size: 7vh;
+    font-weight: bold;
+    color: #EB5757;
+}
+.myCarousel {
+    margin-top: 5vh;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+}
+.carousel-control-prev-icon {
+    width: 3vw;
+    height: 5vw;
+}
+.carousel-control-next-icon {
+    width: 3vw;
+    height: 5vw;
+}
+.nextCarouselButton:hover {
+    cursor: pointer;
+}
+.prevCarouslButton:hover {
+    cursor: pointer;
+}
+

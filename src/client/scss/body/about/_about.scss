@@ -1,0 +1,96 @@
+
+    
+@import './_about-contact-information';
+@import './_about-pictures';
+  
+@media only screen and (min-width: 1200px) 
+{
+ 
+}
+  
+@media only screen and (min-width: 992px) and (max-width: 1199px) 
+{
+ 
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
+  
+  
+}
+@media only screen and (max-width: 960px) 
+{
+  
+}
+
+@media only screen and (max-width: 480px) 
+{
+  .prt {
+    border: 1px black;
+    position: relative;
+    margin: 0% 0% 10% 0%;
+    h1{
+      color: white;
+      position: absolute;
+      top: 20%;
+      left: 8%;
+      font-size: 4vw;
+
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    p{
+      display: none;
+    }
+
+    button{
+      position: absolute;
+      bottom: 20%;
+      left: 28.5%;
+      width: 43%;
+      height: 23%;
+      font-weight: 900;
+      font-size: 1.75vw;  
+      border: 1px solid white;
+      color: white;
+      
+    }
+    button:hover{
+      color: black;
+    }
+  }
+    
+  .prt1 {
+    border: 1px black;
+    position: relative;
+    h1{
+      color: black;
+      position: absolute;
+      top: 18%;
+      left: 28.5%;
+      font-size: 4vw;
+
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    p{
+      display: none;
+    }
+    button {
+      position: absolute;
+      bottom: 25%;
+      left: 28.5%;
+      width: 43%;
+      height: 23%;
+      font-weight: 900;
+      font-size: 1.75vw;
+      border: 1px solid black;
+      color: black;
+      
+    }
+    button:hover{
+      color: white;
+    }
+}
+}

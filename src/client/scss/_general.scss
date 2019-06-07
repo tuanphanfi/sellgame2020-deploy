@@ -1,0 +1,24 @@
+$yellow: rgb(254, 209, 58);
+$green:rgb(14,73,68);
+$blue:rgb(34,43,111);
+$red:rgb(190,58,34);
+
+*{
+    // font-family: Oswald;
+    font-family: 'Arial';
+    #pagelocation{
+        
+        //font-style: regular;
+        font-size: 10pt;
+        margin-top: 10pt;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    * {
+        font-size: 12px;
+        
+        
+    }
+}
+

@@ -1,0 +1,157 @@
+.bodyNews{
+    color: black;
+    margin: 0px 200px;
+    width: calc(100%-400px);
+    img{
+        display: inline-block;
+        width: 32%;
+    }
+
+}
+
+.bodyNews-aNews{
+    padding-bottom: 3%;
+    margin: 0px 200px;
+    width: calc(100%-400px);
+    .mainNews{
+        width: 60%;
+        display: inline-block;
+        vertical-align: top;
+        //
+        // height: 328px;
+        // left: 47px;
+        //font-size: 24px;
+        //letter-spacing: 0.02em;
+        margin: 0 10% 0 0;
+    }
+    
+    #newsTitle{    
+        font-size: 28pt;
+        color: $red;
+        
+        //letter-spacing: 0.02em;
+    }
+    .content{
+        font-size: 14pt;
+    }
+    #content_text{
+        font-size: 14pt;
+        margin-top: 14pt;
+    }
+    /* sellgames1 */
+    .pic1{   
+        width: 100%;
+        margin-top: 14pt;
+        // left: 47px;
+        // top: 1384px;
+    }
+    
+
+    .topNews{
+        width: 30%;
+        display: inline-block;
+         font-size:22pt;
+         padding-top: 10%;
+         vertical-align: top;
+    
+        .aNews{
+            background-color: black;
+            width: 100%;
+            color: white;
+            margin-bottom: 30%; 
+            #topnews_title, img{
+                width: 100%;
+            }
+            #topnews_title{
+                padding:1em;
+                
+                font-size: 14pt;
+            }
+        }
+    }    
+    
+      
+}
+.bodyNews-aNews_piece{
+    img{
+        max-width: 30%;
+        min-width: 20%
+    }
+    .bodyNews-textWrapper{
+    display: inline-block;
+    width: 65%;
+    margin: 0 0 0 2%;
+    vertical-align: top;
+    h1{
+        display: block;
+        margin: 0;
+        font-size: 2em;
+        font-weight: 900;
+    }
+
+    p{
+        font-size: 1.25em;
+        letter-spacing: 0.01cm;
+    }
+
+    .bodyNews-textWrapper-date{
+        text-indent: 2em;
+        margin: 0;
+    }
+}
+
+hr{
+    border-top: 1px solid black;
+    margin-left:-2%;
+}  
+}
+
+@media screen and (max-width: 960px) {
+    .bodyNews {
+        width: 90%;
+        font-size: 12px;
+        margin: 0px 5%;
+    }
+    .bodyNews img {
+        width: 100%;
+    }
+
+    .bodyNews-aNews {
+        margin: 0px 5%;
+        width: 90%;
+        
+        .mainNews, .topNews, img{
+            width: 100%;
+        }
+        .topNews{
+            padding-top: 20px;
+            h1{
+                margin-bottom: 5%;
+            }
+            .aNews{
+                margin-bottom: 15%;
+            }
+            
+        }
+    }
+
+    .bodyNews-aNews_piece{
+        img{
+            margin: auto 0;
+        }
+        .bodyNews-textWrapper{
+            h1{
+                font-size: 14px;
+            }
+            p{
+                font-size: 12px;
+            }
+            .bodyNews-textWrapper-date em {
+                display: none;            
+            }
+        }
+    }
+
+
+}
+

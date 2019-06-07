@@ -1,0 +1,57 @@
+{
+  "name": "sellgame2020-new_ver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --env.dev",
+    "build": "webpack",
+    "start": "nodemon --ignore dist src/server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/real-life-it/sellgame2020-new_ver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/real-life-it/sellgame2020-new_ver/issues"
+  },
+  "homepage": "https://gitlab.com/real-life-it/sellgame2020-new_ver#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^5.16.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-runtime": "^6.26.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.3.1",
+    "common": "^0.2.5",
+    "compression": "^1.7.4",
+    "d3-ease": "^1.0.5",
+    "express": "^4.16.4",
+    "js-cookie": "^2.2.0",
+    "mongoose": "^5.4.12",
+    "multer": "^1.4.1",
+    "nodemon": "^1.18.10",
+    "react": "^16.8.6",
+    "react-animation": "^1.0.7",
+    "react-bootstrap": "^1.0.0-beta.6",
+    "react-dom": "^16.8.6",
+    "react-iframe": "^1.5.0",
+    "react-move": "^5.2.1",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^4.3.1",
+    "webpack-dev-server": "^3.3.1"
+  }
+}

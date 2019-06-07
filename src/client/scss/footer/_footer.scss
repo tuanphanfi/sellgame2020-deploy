@@ -1,0 +1,194 @@
+.scroll .fas {
+    display: none;
+
+    padding: 0.5% 0.7%;
+    font-size: 40px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 5%;
+    position: relative;
+    left: 95%;
+    bottom: 10%;
+    position: fixed;
+    background: $red;
+    color: white;
+    z-index: 1;
+    
+}
+
+.scrollUp {
+    & .fas {
+        display: block;
+    }
+    
+    
+}
+
+
+
+.footer1 { 
+    
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $blue;
+    height: 22em;
+
+    & .photoLibrary {
+        margin: 0 auto;
+        padding: 2% 3%;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 2px solid white;
+        color: white;
+
+        & a {
+            background-color: $blue;
+            color: white;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: white;
+            color: $blue;
+            transition: 0.3s;
+
+            & a {
+                background-color: white;
+                color: $blue;
+                text-decoration: none;
+                transition: 0.3s;
+
+            }
+        }
+
+        
+        
+    }
+}
+
+.footer1-child-div  {
+    //position: absolute;
+    float:  left;
+    
+    width: 33.3%;
+    height: 22em;
+    text-align: center;
+    background-color: $blue;
+    // color: white;
+
+    h3 {
+        background-color: inherit;
+        color: white;
+        margin: 10% auto;  
+        font-size: 36px;
+    }
+
+    & .footerDetail {
+        background-color: $blue;
+        color: white;
+        margin: 0 auto;
+        padding: 15 0;
+        font-size: 16px;
+    }
+
+
+}
+
+
+
+.fa {
+    padding: 0% 0%;
+    font-size: 40px;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+    margin-right: 5%;
+    position: relative;
+    left: 3%;
+}
+
+.fa-facebook {
+    &:link {
+        background: $blue;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.fa-instagram {
+    &:link { 
+        background: $blue;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.footer2 {
+
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 4em;
+    line-height: 4em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    font-style: bold;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .footer1-child-div {
+      width: 100%;
+      height: 70%;
+      border-top: 1px solid white;
+    }
+
+    .footer1-child-div h3 {
+        margin: 5% auto;
+        font-size: 30px;
+    }
+
+    .footer1-child-div .footerDetail {
+        font-size: 14px;
+    } 
+
+    .footer2 {
+      width: 100%;
+      height: 100%;
+      
+    }
+
+    .scroll .fas {
+        width: 1em;
+        height: 1em;
+        left: 90%;
+        padding: 0.001em ;
+    }
+
+    .footerPositionChange {
+        position: relative;
+        top: 40vw;
+    }
+    
+}
+
+   
+
+
+
+
+
+
+
+

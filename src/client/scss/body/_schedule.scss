@@ -1,0 +1,263 @@
+// .schedule{
+//     width: 90%;
+//     margin: 0% 5%;
+//     // h3{
+//     //     size: 2.25 em; 
+//     // }
+    
+//     table, tr{
+//         width: 80%;
+//         margin: 5% 10%;
+//         text-align: center;
+//     }
+    
+//     td,th{
+//         width: 20%;
+//         text-align: center; 
+//     }
+//     th{
+//         size: 1.80 em;
+//         padding: 0.5em;
+//     }
+//     td{
+//         font-style: regular;
+//         font-size: 12pt;
+//         padding: 0.5em;
+//     }
+//     #desc-extend{
+//         background-color: $yellow;
+//         color: black;
+//         font-style: bold;
+//         padding: 0.25em 0.5em;
+//         size: 1em;
+//         text-align: center;
+//         border-radius: 10%;
+//     }
+//     #filterAppear{
+//         display: none;
+//         margin-left: 5%;
+//         color: $blue;
+//         &:hover{color: $yellow;}
+//     }
+    
+//     @media screen and (max-width:960px) {
+//         #filterAppear {
+//             display:block;
+//         }
+//     }
+//     #filterSection{
+//         display: block;
+//         width: 50%;
+//         margin: auto;
+//         #dateSelect{
+//             width: 40%;
+//              display: inline-block;
+//              margin-right:7%;
+//              label{
+//                 font-size: 1em;
+//                 vertical-align: baseline;
+//                  margin-right:0.5em
+//              }
+//              i{
+//                 font-size: 2.5em;
+//                  vertical-align: middle;
+//                  color:$green;
+//              }
+//              #dateFilter{
+//                 vertical-align: middle;
+//                 height: 2.5em;
+//                 width:50%;
+//                  text-align:center;
+//                   margin-left:0.5em;
+//                   margin-right:0.5em;
+//                   border: 0.02em solid $green;
+//              }
+//         }
+//         #sportSelect{
+//             display: inline-block;
+//             width: 40%;
+//             margin-right: 5%;
+//         }
+//         select{
+//             margin: 1em;
+//             width:55%;
+//             border: 0.02em solid $green;
+            
+//         }
+//         button{
+//             width: 8%;
+//             text-align: center;
+//             background-color: $blue;
+//             color: white;
+//             font-weight: 1em;
+//             border-radius: 15%;
+//         }
+//         @media screen and (max-width:960px) {
+//             #dateSelect, #sportSelect{
+//                 width: 100%;
+//                 padding:0;
+            
+//             }
+//             button{
+//                 width: 70%;
+//             }
+//         }
+//     }
+//     @media screen and (max-width:960px) {
+//         #filterSection{
+//             display:none;
+//         }
+//     }
+    
+   
+// }
+
+
+.schedule{
+    margin: 0px 200px;
+    width: calc(100% - 400px);
+
+    h2{
+        
+    }
+    #filterAppear{
+        display: none;
+        margin-left: 5%;
+        color: $blue;
+        &:hover{color: $yellow;}
+    }
+    #filterSection{
+                display: block;
+                width: 70%;
+                margin: auto;
+                font-size: 12pt;
+                #dateSelect{
+                    width: 40%;
+                     display: inline-block;
+                     margin-right:5%;
+                     label{
+                        // font-size: 1em;
+                        vertical-align: baseline;
+                         margin-right:0.5em
+                     }
+                     i{
+                        font-size: 2.5em;
+                         vertical-align: middle;
+                         color:$blue;
+                     }
+                     #dateFilter{
+                        vertical-align: middle;
+                        // height: 2.5em;
+                        width: 50%;
+                         text-align:center;
+                        //   margin-left:0.5em;
+                        //   margin-right:0.5em;
+                        margin: 0px 0.5em;
+                          border: 0.02em solid $green;
+                          font-size: 12pt;
+                     }
+                }
+                #sportSelect{
+                    display: inline-block;
+                    width: 40%;
+                    margin-right: 3%;
+                
+                select{
+                    margin: 1em;
+                    width:55%;
+                    border: 0.02em solid $green;
+                    }
+                }
+                button{
+                    width: 12%;
+                    text-align: center;
+                    background-color: $blue;
+                    color: white;
+                    font-weight: 1em;
+                    border-radius: 15%;
+                }
+            
+        }
+        
+            
+
+    table{
+        width: 100%;
+        font-size: 12pt;
+        th, td{
+            width: 25%;
+            text-align: center;
+        }
+        td{
+            font-style: regular;
+            font-size: 12pt;
+            padding: 0.5em;
+        }
+            #desc-extend{
+        background-color: $yellow;
+        color: black;
+        
+        padding: 0.25em 0.5em;
+        // size: 1em;
+        text-align: center;
+        border-radius: 10%;
+        }
+    }
+}
+@media screen and (max-width:960px) {
+    .schedule{
+        margin: 0px 5%;
+        width: 90%;
+    
+        #filterAppear{
+            display: block;
+        }
+        #filterSection{
+                    display: none;
+                    margin-bottom: 15px;
+                    #dateSelect, #sportSelect{
+                                        width: 100%;
+                                        padding:0;
+                                    
+                                    }
+                    button{
+                        width: 100%;
+                        
+                    }
+                    #dateSelect{
+                        margin-bottom: 5px;                        label{
+                           width: 10%;
+                            margin-right:5%;
+                        }
+                        i{
+                           width: 5%;
+                        }
+                        #dateFilter{
+                           width:70%;
+                           margin: 0 2.5%;
+                        }
+                   }
+                   #sportSelect{
+                       margin-bottom: 5px;
+                       label{
+                           width:10%;
+                           margin-right: 5%;
+                       }
+                       select{
+                           width:85%;
+                           margin:0px;
+                           
+                       }
+                   }
+                }
+                                
+                    
+        table{
+            
+            td{
+                font-size: 8pt;
+            }
+            
+        }
+    }
+}

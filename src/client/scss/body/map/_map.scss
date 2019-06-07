@@ -1,0 +1,134 @@
+// .map{
+//     //height: 1600px;
+//     margin: 0 auto;
+    
+    
+//     img{
+        
+//         // width: 20%;
+//     }
+
+//     h4{
+//         // margin: auto 0 0 0;
+//         display: inline-block;
+//         margin: 1% 0 0 1%;
+
+//         font-size: 3em;
+//     }
+
+//     a{
+//         color: black;
+//         &:hover{
+//             opacity: 0.6;
+//         }
+//     }
+// }
+
+
+// Iframe{
+//     height: 400px;
+//     width: 100%;
+    
+// }
+
+// .map-contact{
+//     margin: 500px 0 0 0;
+//     h1{
+//         //width: 40%;
+//         // margin-top: 15%;
+//         font-size: 2.5em;
+//         font-weight: bold;
+//         margin: 5% auto 0;
+//         text-align: center;
+//     }
+// }
+
+// .map-contact-visitUs, 
+// .map-contact-email{
+//     width: 45%;
+//     height: 500px;
+//     background-color: $yellow;
+//     display: inline-block;
+//     margin: 1% 2%;
+    
+//     h2{
+//         color: white;
+//         font-weight: bolder;
+//         font-size: 2em;
+//         padding: 0;
+//     }
+//     overflow: hidden;
+//     padding: 20px;
+//     p{
+//         font-size: 1.25em;
+//     }
+//     a{
+//         color: $red;
+//         font-size: 2em;
+//     }
+// }
+
+// .map-contact-visitUs{
+//     background-color: $yellow;
+//     h2{
+//         color: black;
+//     }
+// }
+
+// .map-contact-email{
+//     background-color: $red;
+//     color: white;
+//     .map-contact-email-info{
+//         box-shadow: 1px 1px 10px 1px saddlebrown;
+//         padding: 15px;
+//         margin: 2% 0 0 0;
+        
+//     }
+
+// }
+
+// @media screen and (max-width: 700px) {
+//     Iframe{
+        
+//         width: 100%;
+//     }
+
+//     .map {
+//         & .maptitle {
+//             font-size: 3em;
+//         }
+//     }
+
+//     .map-contact {
+        
+//         h1 {
+//             font-size: 3em;
+//             width: 90%;
+        
+//         }
+//     }
+
+//     .map-contact-visitUs{
+//         width: 80%;
+//         height: 80vw;
+//         margin: 0 10%;
+//     }
+
+//     .map-contact-email{
+//         width: 80%;
+//         height: 80vw;
+//         margin: 0 10%;
+//     }
+    
+// }
+.map{
+    Iframe{
+            height: 400px;
+            width: 100%;
+            
+        }
+        #map{
+            width: calc(100%-400px);
+            margin: 0px 200px;
+        }
+}

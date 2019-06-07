@@ -1,0 +1,265 @@
+.button-wrapper.green-border {
+    position: relative;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+}
+
+
+.button-wrapper.yellow-border {
+    position: relative;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.button-wrapper:hover .green-border {
+    position: absolute;
+    transition: all 0.3s ease;
+    transform: rotate(10deg);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.button-wrapper:hover .yellow-border{
+    position: absolute;
+    transition: all 0.3s ease;
+    transform: rotate(-10deg);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.featured_wrapper {
+    margin: 0 auto;
+    width: 1280px;
+    margin-top: 90px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.featured_stripes {
+    position: relative
+}
+.featured_text {
+    position: relative;
+    font-family: 'Righteous', cursive;
+}
+
+
+.featured_stripes .stripe {
+    width: 230px;
+    height: 800px;
+    position: absolute;
+}
+
+.featured_number {
+    font-size: 270px;
+    color: #ffffff;
+    transform: translate(260px,170px);
+    position: absolute;
+}
+
+.featured_player {
+    width: 500px;
+    height: 500px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+}
+.featured_first {
+    position: absolute;
+    background: #0e1731;
+    color: #ffffff;
+    font-size: 92px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    margin-top:-280px;
+}
+
+.featured_second {
+    position: absolute;
+    background: #0e1731;
+    color: #ffffff;
+    font-size: 92px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    margin-top:-270px;
+}
+
+/* CSS For 16 sports event*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+.sport-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.sport-gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	overflow: hidden;
+}
+
+.sport-gallery-image {
+	display: block;
+	width: 100%;
+	height: 208.3px;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.sport-gallery-image:hover {
+	transform: scale(1.15);
+}
+.sport-desc {
+    display: block;
+    position: relative;
+    z-index:1;
+    font-size: 2em;
+    margin-top: -100px;
+    margin-inline-start: 0px;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    font-weight: 700;
+    transition: all 0.5s ease-in 0.1s;
+
+}
+sport-desc:hover{
+    transform: scale(1.05);
+}
+
+
+/******SPORT DETAIL PAGE *********/
+.sport-desc-header{
+	text-align: center;
+}
+
+.meta {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: italic;
+	text-align: center;
+}
+
+.page-title {
+    font-family: "Arial Black";
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.post-title {
+    color: #BE3A22;
+    font-family: "Arial ";
+    font-weight: 400;
+}
+.general-rules-fee {
+    font-family: "Arial";
+   
+}
+.rule-paragraph-desc{
+    font-weight: normal;
+    line-height: 14px;
+}
+.rule-container{
+    /* margin: 40px 200px 40px 200px; */
+    
+}
+.name-rule{
+    font-weight:500;
+    text-align: center;
+    font-size:30px;
+}
+.title-container{
+   
+    margin:200px;
+}
+
+.sport-desc-button {
+    width: 40%;
+    background-color: #BE3A22;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto 30%;
+    cursor: pointer;
+
+  }
+  a:hover{
+      text-decoration: none;
+      color: yellow;
+  }
+
+@media screen and (max-width: 700px) {
+    .rule-container {
+      width: 100%;
+      height: 100%;
+    }
+    .post-content .post-content-desc {
+        text-align: justify !important;
+        font-size: 13px;
+        /* line-height: 14px; */
+        width: 600px;
+        margin: 20px 200px 20px 200px !important;
+    }
+
+
+    
+  }
+
+  /*******SPORT LIST REGULATION ********/
+
+  .sport-list-container {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: normal;
+    text-align: left;
+    margin:20px 200px;
+    
+  }
+  
+  .sport-list-container > * {
+   
+    flex: 1 50%;
+  }
+  
+  .sport-list-flex-container{
+    font-famliy: Arial;
+    font-weight: normal;
+    font-size:16px;
+    list-style: none;
+    align-self: center;
+    }
+
+    .flex-item:hover{
+    color: #BE3A22;
+    }
+    
+  
+  @media all and (min-width: 600px) {
+    .sport-list-flex-container{ flex: 1 1 1;  padding: 20px 50px; }
+    
+    
+  }
+  
+  @media all and (min-width: 800px) {
+    .sport-list-flex-container{ flex: 1 1 1;  padding: 20px 160px; }
+
+  }
+  
+  

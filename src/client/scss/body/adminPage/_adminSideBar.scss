@@ -1,0 +1,23 @@
+#admin-sidebar {          
+  border-right: 1px solid black;
+  width: 20%; 
+  background: #322F2F;    
+    ul{ 
+        padding: 0;    
+        margin: 0;    
+        list-style-type: none;  
+    }    
+    li a{                        
+        display: block;        
+        padding: 5%;
+        border-bottom: 1px solid white;                                  
+        color: white;
+        min-height: 4em;
+        width: 100%;        
+        cursor: pointer;
+        text-decoration: none;
+    }
+    li:hover{
+        background-color: #556080;        
+    }
+}

@@ -1,0 +1,18 @@
+.seeMoreButton {
+    
+    font-weight: bold;
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 8vh;
+    border: none;
+    background-color: #BE3A22;
+    color: white;
+    font-size: 2vw;
+
+    min-width: fit-content;
+    min-height: fit-content;
+}
+.seeMoreButton:hover {
+    background-color: rgb(156, 40, 19);
+}

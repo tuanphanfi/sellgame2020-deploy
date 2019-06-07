@@ -1,0 +1,156 @@
+#results-component {
+    // border: 1px solid black;
+    width: 100%;    
+    //margin: 0 200px 0 200px; 
+    
+    .component-title {
+        display: inline-block;        
+        h1{
+            font-size: 36px;            
+            margin: 0 30% ;
+        }      
+               
+        // border: 1px solid black;    
+    }
+
+    .linkToPage{
+        a{            
+            text-decoration: none;
+        }
+        h4{
+            font-size: 16px;
+            display: inline;  
+            color: black;
+        }
+        h4:hover{
+            font-weight: bold;
+            color: $red;
+        }
+        // border: 1px solid black;
+        margin-bottom: 3%;
+    }
+
+    .date-picker{
+        display: block;
+        //border: 1px solid black;        
+        text-align: center;         
+        margin: 2% auto;        
+        i{
+            display: inline-block;
+            font-size: 3em;
+            cursor: pointer;            
+        }       
+        h1{
+            font-size: 36px;
+        } 
+    }
+    .date-field{
+        display: inline-block;        
+        border: 1px solid black;
+        margin: 1%;
+        padding: 0% 6%;
+
+        h3{
+            font-size: 16px;
+        }
+
+    }
+
+    .dropdown-button{
+        display: inline-block;        
+        cursor: pointer;
+    }
+
+    .dropdown-content{
+        margin-top: 1px;
+        display: none;                     
+        max-width: 95%;
+        // max-height: 30em;
+        // overflow: auto; 
+        background-color: $yellow; 
+        border-radius: 2%;       
+        border: 1px solid black;
+        cursor: pointer;    
+
+    }
+
+    .dropdown-content li {   
+        
+        padding: 3% 5%;
+        display: block;                
+        color: black;         
+        border: 2px solid;
+        border-bottom: 0;   
+    }
+    .dropdown-content li:nth-last-child(1){
+        border-bottom: 2px solid black;
+    }
+
+    /*When hover, display dropdown content*/
+    .dropdown-button:hover .dropdown-content {
+        display: block;                                  
+    }
+
+    // When hover, change color of link
+    .dropdown-content li:hover{
+        text-decoration: none;
+        color: white;   
+        background: yellowgreen;  
+        border: 2px solid white;             
+    }
+
+    /*Results content*/
+    .results-content{
+        display: block; 
+               
+        // border: 1px solid black;        
+    }
+    .sport-title{
+        display: block;
+        background: $yellow;     
+        margin: 2% 30%;
+        width: 40%;                       
+        padding: 0.001%;
+        cursor: pointer;
+        text-align: center;
+        
+        h1{
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size:  30px;
+        }
+    }
+    .sport-title:hover{
+        background: yellow;         
+    }
+
+    .results-board{
+        padding: 1% 25%;                
+    }
+    .results-bar{        
+        display: inline-block;
+        // border: 1px solid black;
+        height: auto;
+        width: 100%;  
+        margin: 3%;
+    }
+    .rank{
+        float: left;
+        background: $red;
+        color: white;
+        width: 55px;      
+        height: 55px;               
+        text-align: center;                                      
+    }
+    .name{                 
+        float: right;        
+        padding: 0% 2%;
+        width: 65%;                                            
+        border: 1px solid black;
+        
+        h3{
+            word-wrap: break-word;
+        }
+    }
+}
+
